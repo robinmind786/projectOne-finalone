@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - jQuery Pagination with simplePagination.js</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
+<style type="text/css">
+	
+
+</style>
+
+</head>
+<body>
+
+<div id="pagination-container"></div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js'></script>
+<script type="text/javascript">
+	var items = $(".list-wrapper .list-item");
+    var numItems = items.length;
+    var perPage = 4;
+
+    items.slice(perPage).hide();
+
+    $('#pagination-container').pagination({
+        items: numItems,
+        itemsOnPage: perPage,
+        prevText: "&laquo;",
+        nextText: "&raquo;",
+        onPageClick: function (pageNumber) {
+            var showFrom = perPage * (pageNumber - 1);
+            var showTo = showFrom + perPage;
+            items.hide().slice(showFrom, showTo).show();
+        }
+    });
+</script>
+
+</body>
+</html>
