@@ -386,7 +386,7 @@ h6 {
 
 .nav-menu li:hover>a,
 .nav-menu .menu-active>a {
-    color: #c4a75b;
+    color: #ff2143;
 }
 
 .nav-menu>li {
@@ -443,7 +443,7 @@ h6 {
 
 #mobile-nav-toggle i {
     /*color: #555;*/
-    color: #c4a75b;
+    color: #fff;
 }
 
 /* Mobile Nav Styling */
