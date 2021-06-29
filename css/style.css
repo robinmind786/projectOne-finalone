@@ -2,6 +2,7 @@ body {
     background: #fff;
     color: #444;
     font-family: "Open Sans", sans-serif;
+    background: #eee;
 }
 
 a {
@@ -132,7 +133,7 @@ h6 {
     transition: all 0.5s;
     z-index: 997;
     /*background: #fff;*/
-    background: #316ec2;
+    background: #00aeed;
     box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 
@@ -187,7 +188,7 @@ h6 {
 }
 
 #header #logo a h1 {
-    color: #e01212;
+    color: #f25759;
 }
 
 /*--------------------------------------------------------------
